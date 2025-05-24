@@ -4,15 +4,34 @@
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Iosevka Nerd Font:size=13"
+	"Iosevka Nerd Font:size=16"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+
+// // gruvbox
+// static const char *colors[SchemeLast][2] = {
+// 	/*     fg         bg       */
+// 	[SchemeNorm] = { "#ebdbb2", "#282828" },
+// 	[SchemeSel] = { "#ebdbb2", "#98971a" },
+// 	[SchemeOut] = { "#ebdbb2", "#8ec07c" },
+// };
+
+// // nerdy
+// static const char *colors[SchemeLast][2] = {
+//     /*        fg        bg        */
+//     [SchemeNorm] = { "#eeffff", "#212121" },
+//     [SchemeSel]  = { "#eeffff", "#4a4a4a" },
+//     [SchemeOut]  = { "#eeffff", "#13ca91" },
+// };
+
+// nerdy-amoled
 static const char *colors[SchemeLast][2] = {
-	/*     fg         bg       */
-	[SchemeNorm] = { "#ebdbb2", "#282828" },
-	[SchemeSel] = { "#ebdbb2", "#98971a" },
-	[SchemeOut] = { "#ebdbb2", "#8ec07c" },
+    /*        fg        bg        */
+    [SchemeNorm] = { "#eeffff", "#000000" },
+    [SchemeSel]  = { "#eeffff", "#202020" },
+    [SchemeOut]  = { "#000000", "#13ca91" },
 };
+
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
 

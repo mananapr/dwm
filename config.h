@@ -6,21 +6,44 @@
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const unsigned int gappx     = 10;        /* gaps between windows */
+static const unsigned int gappx     = 5;        /* gaps between windows */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int user_bh            = 35;       /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
 static const char *fonts[]          = { "Iosevka Nerd Font:size=13" };
 static const char dmenufont[]       = "Iosevka Nerd Font:size=13";
-static const char col_gray1[]       = "#282828";
-static const char col_gray2[]       = "#504945";
-static const char col_gray3[]       = "#bdae93";
-static const char col_gray4[]       = "#ebdbb2";
-static const char col_cyan[]        = "#cc241d";
 
-static const char *colors[][3]      = {
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_gray1,  col_gray3  },
+// // gruvbox
+// static const char col_gray1[]       = "#282828";
+// static const char col_gray2[]       = "#504945";
+// static const char col_gray3[]       = "#bdae93";
+// static const char col_gray4[]       = "#ebdbb2";
+// static const char col_cyan[]        = "#cc241d";
+// static const char *colors[][3]      = {
+// 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+// 	[SchemeSel]  = { col_gray4, col_gray1,  col_gray3  },
+// };
+
+// nerdy
+// static const char col_bg[]       = "#212121";
+// static const char col_fg[]       = "#eeffff";
+// static const char col_gray[]     = "#4a4a4a";
+// static const char col_accent[]   = "#13ca91";  // or use #7898fb or #f07178 for contrast
+//
+// static const char *colors[][3]   = {
+// 	[SchemeNorm] = { col_fg, col_bg, col_gray },
+// 	[SchemeSel]  = { col_fg, col_bg, col_accent },
+// };
+
+// nerdy-amoled
+static const char col_bg[]       = "#000000";
+static const char col_fg[]       = "#eeffff";
+static const char col_gray[]     = "#202020";
+static const char col_accent[]   = "#13ca91";  // vibrant accent, or "#ff5370" for red
+
+static const char *colors[][3]   = {
+	[SchemeNorm] = { col_fg, col_bg, col_gray },
+	[SchemeSel]  = { col_fg, col_bg, col_accent },
 };
 
 

@@ -4,3 +4,5 @@ drw.o
 *.orig
 *.rej
 *.dif
+dwm
+dmenu/dmenu
